@@ -1,0 +1,26 @@
+# Template for the credentials and variables to use. 
+# Fill in as required, and rename to terraform.tfvars
+
+# Provider variables - fill in vcenter name, and credentials for accessing.
+username = ""
+password = ""
+vcenter  = ""
+
+# Data block variables. Details from the vCenter
+datacenter_name = ""
+sdrs_cluster_name = ""
+#datastore_name = "" # if using a datastore rather than SDRS cluster.
+portgroup_name = ""
+cluster_name = ""
+centos_template_name = ""
+
+# Template root credential. Better would be keys.
+root_pass = ""
+
+# Deployed VM details - these would be set in the OS.
+vmname = ""
+vm_ip = "" # first 3 octets plus . eg, "192.168.0." - 4th octet will be added based on start_ip value plus the current count value. 
+start_ip = "" # starting point for the 4th octet. Count will be added to this and this will be concatenated to vm_ip to give the final IP
+vm_gw = ""
+vm_dns = ""
+domain_name = ""
