@@ -1,0 +1,25 @@
+# Template for the credentials and variables to use. 
+# Fill in as required, and rename to terraform.tfvars
+
+# Provider variables - fill in vcenter name, and credentials for accessing.
+username = ""
+password = ""
+vcenter  = ""
+
+# Data block variables. Details from the vCenter
+datacenter_name = ""
+sdrs_cluster_name = ""
+#datastore_name = "" # if using a datastore rather than SDRS cluster.
+portgroup_name = ""
+cluster_name = ""
+windows_template_name = ""
+
+# Template Administrator credential. 
+admin_pass = ""
+
+# Deployed VM details - these would be set in the OS.
+vmname = ""
+vm_ip = ""
+vm_gw = ""
+vm_dns = ""
+domain_name = ""
